@@ -403,6 +403,8 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
+    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 11428), true);
+  } else {
     db.Add(CService("kjy2eqzk4zwi5zd3.onion", 1428), true);
   }
   do {
