@@ -71,7 +71,7 @@ public:
         {"testnet", no_argument, &fUseTestNet, 1},
         {"wipeban", no_argument, &fWipeBan, 1},
         {"wipeignore", no_argument, &fWipeBan, 1},
-        {"help", no_argument, 0, 'h'},
+        {"help", no_argument, 0, '?'},
         {0, 0, 0, 0}
       };
       int option_index = 0;
